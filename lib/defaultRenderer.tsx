@@ -1,4 +1,4 @@
-import { Tag } from "./main.ts";
+import { Tag } from "./types.ts";
 
 export const defaultRenderer = (tag: Tag, size: number, color: string) => {
     const { className, style, ...props } = tag.props || {};

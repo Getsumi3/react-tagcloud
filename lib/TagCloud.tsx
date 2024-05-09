@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import randomColor from "randomcolor";
 import React, { useEffect, useState } from "react";
 import seedrandom from "seedrandom";
@@ -6,7 +5,7 @@ import arrayShuffle from "shuffle-array";
 
 import { defaultRenderer } from "./defaultRenderer";
 import { fontSizeConverter, keys, omit, pick } from "./helpers";
-import { RendererFunction, Tag, TagCloudProps } from "./main.ts";
+import { RendererFunction, Tag, TagCloudProps } from "./types.ts";
 
 const handlersPropNames = [
     "onClick",
@@ -106,7 +105,7 @@ function randomize(props: TagCloudProps) {
     }));
 }
 
-export function TagCloud({
+export default function TagCloud({
     renderer = defaultRenderer,
     shuffle = true,
     className = "tag-cloud",

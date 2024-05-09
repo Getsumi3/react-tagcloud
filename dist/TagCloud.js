@@ -796,5 +796,5 @@ function Pr({
   return /* @__PURE__ */ Q(t, { ...u, children: $r(h, f) });
 }
 export {
-  Pr as TagCloud
+  Pr as default
 };

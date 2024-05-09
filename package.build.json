@@ -1,0 +1,76 @@
+{
+  "name": "react-tagcloud",
+  "version": "2.3.3",
+  "description": "Tag/word cloud component for react",
+  "keywords": [
+    "react-tagcloud",
+    "react",
+    "tag-cloud",
+    "word-cloud",
+    "tagcloud",
+    "wordcloud"
+  ],
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest --collectCoverage=false",
+    "dev": "vite",
+    "build": "tsc --p ./tsconfig-build.json && vite build; sh ./postinstall.sh",
+    "preview": "vite preview"
+  },
+  "author": "madox2",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/madox2/react-tagcloud/blob/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madox2/react-tagcloud.git"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "randomcolor": "^0.6.2",
+    "seedrandom": "^3.0.5",
+    "shuffle-array": "^1.0.1"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.16.5",
+    "@types/jest": "29.4.0",
+    "@types/node": "20.6.0",
+    "@types/randomcolor": "^0.5.9",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "@types/react-test-renderer": "^18.3.0",
+    "@types/seedrandom": "^3.0.8",
+    "@types/shuffle-array": "^1.0.5",
+    "@typescript-eslint/eslint-plugin": "6.0.0",
+    "@typescript-eslint/parser": "6.0.0",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "8.45.0",
+    "eslint-config-prettier": "8.7.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-refresh": "0.4.3",
+    "jest-cli": "^27.4.5",
+    "prettier": "^2.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-test-renderer": "18.2.0",
+    "ts-jest": "29.1.2",
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2",
+    "upgrade": "^1.1.0",
+    "vite": "4.5.2",
+    "vite-plugin-dts": "3.7.2",
+    "webpack": "^5.65.0",
+    "yarn": "^1.22.17"
+  }
+}
