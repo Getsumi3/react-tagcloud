@@ -8,6 +8,15 @@ See the [demo](https://madox2.github.io/react-tagcloud/).
 
 ![preview tag-cloud preview](./demo-min.png)
 
+## Fork changes
+- migrated from `babel` to `vite`
+- refactored the lib from `js` to `ts`
+- added `onContextMenu` event
+
+## TODO *(optional)*
+- [ ] Fix tests
+- [ ] Implement better resizing to fit the container
+
 ## Installation
 
 ```
@@ -53,19 +62,19 @@ In react native projects import tag cloud from the package relative path `react-
 import React from 'react';
 
 import { Alert } from 'react-native';
-import { TagCloud } from 'react-tagcloud/rn'
+import { TagCloud } from 'react-tagcloud/rn/index'
 
 const data = [
-  // ...
+    // ...
 ]
 
 const SimpleCloud = () => (
-  <TagCloud
-    minSize={12}
-    maxSize={35}
-    tags={data}
-    onPress={tag => Alert.alert(`'${tag.value}' was selected!`)}
-  />
+    <TagCloud
+        minSize={12}
+        maxSize={35}
+        tags={data}
+        onPress={tag => Alert.alert(`'${tag.value}' was selected!`)}
+    />
 )
 ```
 

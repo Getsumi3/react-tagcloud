@@ -1,5 +1,20 @@
 {
-  "semi": false,
-  "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "none",
+  "tabWidth": 4,
+  "semi": true,
+  "singleQuote": false,
+  "printWidth": 100,
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": [
+        "*.scss",
+        "*.css"
+      ],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
 }
