@@ -48,7 +48,16 @@ export interface Tag {
     /** Color of the tag. If not provided a random color will be used */
     color?: string | undefined;
     /** Additional props to be passed to a particular tag component */
-    props?: Partial<{ className?: string; style?: React.CSSProperties } & object> | undefined;
+    props?:
+        | Partial<
+              {
+                  className?: string;
+                  style?: React.CSSProperties;
+                  title?: string;
+                  label?: string;
+              } & object
+          >
+        | undefined;
 }
 
 export type TagEventHandler = (tag: Tag, event: React.MouseEvent<HTMLDivElement>) => void;

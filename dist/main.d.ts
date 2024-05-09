@@ -48,6 +48,8 @@ export interface Tag {
     props?: Partial<{
         className?: string;
         style?: React.CSSProperties;
+        title?: string;
+        label?: string;
     } & object> | undefined;
 }
 export type TagEventHandler = (tag: Tag, event: React.MouseEvent<HTMLDivElement>) => void;
