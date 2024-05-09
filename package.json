@@ -18,10 +18,8 @@
   "scripts": {
     "test": "jest --collectCoverage=false",
     "dev": "vite",
-    "build": "tsc --p ./tsconfig-build.json && vite build",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6001",
-    "build-storybook": "storybook build"
+    "build": "tsc --p ./tsconfig-build.json && vite build; sh ./postinstall.sh",
+    "preview": "vite preview"
   },
   "author": "madox2",
   "license": {
