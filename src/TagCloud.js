@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import arrayShuffle from 'shuffle-array'
 import randomColor from 'randomcolor'
 import seedrandom from 'seedrandom'
@@ -13,6 +13,7 @@ const handlersPropNames = [
   'onMouseMove',
   'onMouseOver',
   'onMouseOut',
+  'onContextMenu',
   // rn handlers
   'onPress',
   'onPressIn',

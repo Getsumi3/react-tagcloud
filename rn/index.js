@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { View, StyleSheet } from 'react-native'
-import { TagCloud as BaseTagCloud } from '../src'
+import { TagCloud as BaseTagCloud } from '../lib'
 import { defaultRenderer } from './defaultRenderer'
 
 export function TagCloud(props) {

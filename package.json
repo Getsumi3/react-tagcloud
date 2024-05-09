@@ -11,6 +11,7 @@
     "wordcloud"
   ],
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "compile": "babel -d lib/ src/",
     "compile:watch": "while inotifywait -e close_write src/*.js; do yarn compile; done",
