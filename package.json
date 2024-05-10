@@ -18,7 +18,7 @@
   "scripts": {
     "test": "jest --collectCoverage=false",
     "dev": "vite",
-    "build": "tsc --p ./tsconfig-build.json && vite build; sh ./postinstall.sh",
+    "build": "tsc --p ./tsconfig-build.json && vite build",
     "preview": "vite preview"
   },
   "author": "madox2",
